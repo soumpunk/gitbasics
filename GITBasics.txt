@@ -1,0 +1,21 @@
+How To Git
+
+1) Right click on the file to be added on the repository and click on GitBash.
+2) It will open a terminal, a command line environment, where you have to type the commands.
+3) For initialising the repository in the current folder type : git init
+4) For checking the status : git status , which shows files which are untracked or staged.
+5) For staging : git add filenamewithextension
+6) Two ways to Commit 
+	a) To commit : git commit which will open a terminal
+	Insert i 
+	type commit note and press esc and then type  :wq
+	Commit done.
+	b) command -> git commit -m 'release notes'
+	Commit Done
+7) Create a git ignore file so that we can add ignored files while commiting-> touch .gitignore
+8) Create new branch by -> git branch nameofthebranch
+9) Change branch by -> git checkout branchname
+10) to go back to the main branch -> git checkout master (master always name of the main branch)
+11) to merge use -> git merge nameofthebranch.
+12) To get a remote repository copy clone link from github and -> git clone githubclonelink
+13) hit git remote sd
