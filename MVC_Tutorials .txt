@@ -1,0 +1,9 @@
+1) Create mvc appplication by : file->New->Project->asp.net mvc 4 web application .
+2) Select View engine razor and select empty template.
+3) To check the version of asp.net mvc a)Select on References -> Right click system.web.mvc and click on properties->Version showing.
+                                       b)To check version programatically -> Add controller->give name HomeController->In controller class index method aka action method type:
+-> return typeOf(Controller).assembly.getName().Version.ToString(); On running get the version printed.
+
+4) To run the application on iis -> Right click on the project-> Select properties-> Select Web tab -> Check iis server and enter application name -> Click on create virtual directory. run the program it should run with the virtual directory name.
+5) Within the global.asax file we have and event handler application_start and it has a call to register routes-> RouteConfig.RegisterRoutes
+6) The definition of the RouteConfig leads us to RouteConfig class present in the app_start folder which contains the default values for HomeController and the default action method. It also contains a parameter which we can add on the url itself or by initialising it in the homecontroller class->  public string Index(string id){ return "Hello to Dot net from "+id;}
